@@ -1,0 +1,43 @@
+{
+    "quizId": "1",
+    "text": "Indie band or a wierd Disney Movie?",
+    "subtitle": "Can you tell the difference?",
+    "content": [
+        {
+            "id": 0,
+            "text": "Try it out",
+            "questions": [
+                {
+                    "text": "Fuzzbucket",
+                    "image": "https://rb.gy/gjdic8",
+                    "alt": "photo of Fuzzbucket" 
+                },
+
+                {
+                    "text": "Shady Bug",
+                    "image": "https://rb.gy/ecmv1v",
+                    "alt": "photo of Shady Bug" 
+                },
+                {
+                    "text": "Guerilla Toss",
+                    "image": "https://rb.gy/qbguxf",
+                    "alt": "photo of Guerilla Toss"
+                },
+                {
+                    "text": "Candleshoe",
+                   "image": "https://rb.gy/yhzscm",
+                   "alt": "photo of candleshoe"
+                }
+            ]
+        }
+    ], 
+    "answers": [
+        {
+            "combination": ["Fuzzbucket","Candleshoe"],
+            "text": "You're a true Disney Queen!",
+            "image": "https://rb.gy/htryxz",
+            "alt": "photo of a Disney Queen"
+        }
+
+    ]
+}
