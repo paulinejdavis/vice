@@ -26,4 +26,4 @@ interface Question {
     
 }
 
-export { QuizData, Answer, Content, Question}
+export type { QuizData, Answer, Content, Question}
