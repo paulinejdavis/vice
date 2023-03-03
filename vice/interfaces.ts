@@ -25,3 +25,5 @@ interface Question {
     alt: string;
     
 }
+
+export { QuizData, Answer, Content, Question}
