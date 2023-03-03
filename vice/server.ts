@@ -10,10 +10,10 @@ const app = express()
 
 app.get('/quiz-item', async (req: Request, res: Response) => {
     try {
-      //@ts-ignore
-        const response: AxiosResponse = await axios.get(process.env. URL, {
+      
+        const response: AxiosResponse = await axios.get("https://6ee178dd-6b81-48de-9c1e-0a2911c3155f-europe-west1.apps.astra.datastax.com/api/rest/v2/namespaces/quizzes/collections/vice_quizzes", {
             headers: {
-                'X-Cassandra-Token': process.env. TOKEN,
+                'X-Cassandra-Token': 'AstraCS:ZxhnLaYevqfabyAjhmOznJie:11835fbf130d911e495344faba91cab9bc0aa57dc399ffc76e83d62cf68fba60',
                 accept: 'application/json'
             }
         })

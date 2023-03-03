@@ -1,10 +1,16 @@
 import React from 'react';
+import { Content } from '../../interfaces';
 
 
-const QuestionsBlock = () => {
+const QuestionsBlock = ({
+  quizItem
+} : {
+  quizItem: Content
+}) => {
   return (
-    <div>
-    </div>
+    <>
+    <h2 id={String(quizItem.id)}>{quizItem.text}</h2>
+    </>
   )
 }
 
