@@ -8,18 +8,21 @@ const QuestionsBlock = ({
    setChosenAnswerItems,
    unansweredQuestionIds,
    setUnansweredQuestionIds,
+
     } : {
+
     quizItem: Content,
     chosenAnswerItems: string[],
     setChosenAnswerItems: Function,
     unansweredQuestionIds: number[] | undefined
     setUnansweredQuestionIds: Function
 }, ref: React.LegacyRef<HTMLHeadingElement> | undefined ) => {
+    
     return (
         <>
             <h2 ref={ref} className="title-block" >{quizItem.text}</h2>
             <div className="questions-container">
-                {quizItem?.question.map((question: Question, _index: number) =>(
+                {quizItem?.questions.map((question: Question, _index: number) =>(
                     <QuestionBlock
                         key={_index}
                         quizItemId={quizItem.id}

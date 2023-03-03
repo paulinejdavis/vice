@@ -10,13 +10,13 @@ interface Answer {
     text: string;
     image: string;
     alt: string;
-    combination: string;
+    combination: string[];
 }
 
 interface Content {
     id: number;
     text: string;
-    question: Question[];
+    questions: Question[];
 }
 
 interface Question {

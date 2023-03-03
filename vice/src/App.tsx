@@ -3,11 +3,13 @@ import { QuizData, Content } from '../interfaces';
 import QuestionsBlock from './components/QuestionsBlock';
 import Title from './components/Title';
 import AnswerBlock from './components/AnswerBlock';
+import {createNavbar} from './components/NavBar';
 
 
 
 
 const App = () => {
+  const navbar = createNavbar();
   const [quiz, setQuiz] = useState<QuizData | null>()
   const [chosenAnswerItems, setChosenAnswerItems] = useState<string[]>([])
   const [ unansweredQuestionIds, setUnansweredQuestionIds] = useState<number[] | undefined>([])
@@ -64,6 +66,7 @@ const answerRef = createRef<HTMLDivElement | null>()
  }, [unansweredQuestionIds, chosenAnswerItems.length, showAnswer, answerRef.current, refs])
   return (
     <div className="app">
+      
     <Title title={quiz?.title} subtitle={quiz?.subtitle}/>
       {refs && quiz?.content.map((content: Content) => (
           <QuestionsBlock
